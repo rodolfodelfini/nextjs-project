@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rodolfodelfini/nextjs-project#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
