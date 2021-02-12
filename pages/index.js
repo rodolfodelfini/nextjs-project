@@ -7,10 +7,11 @@ const Index = ({dados}) => (
         <h1>Test NextJs + React + Vercel</h1> 
         {console.log(dados)}
         <ul>
-            {dados.map(registro =>(
-                <li key={registro.id}>
-                    <h2>Name:{registro.name}</h2>
-                    <p>Website:{registro.website}</p>
+            {dados.data.map(registro =>(
+                <li  key={registro.id}>
+                    <h2>Name:{registro.first_name}</h2>
+                    <p>Email:{registro.email}</p>
+                    <img src={registro.avatar}/>
                 </li>
             ))}
         </ul>
@@ -19,7 +20,7 @@ const Index = ({dados}) => (
    
 Index.getInitialProps = async () =>{
     const response = await axios.get(
-        'https://jsonplaceholder.typicode.com/users/'
+        'https://reqres.in/api/users?per_page=20'
     );
 
     return { dados: response.data}
