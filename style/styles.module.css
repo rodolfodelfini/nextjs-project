@@ -33,7 +33,20 @@
   -webkit-box-shadow: 0px 1px 1px 1px #ebebeb;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    0px 1px 1px 1px #ebebeb;  /* Firefox 3.5 - 3.6 */
   box-shadow:         0px 1px 1px 1px #ebebeb;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+  -webkit-transition: -webkit-transform 0.6s ease;
+  -moz-transition: -moz-transform 0.6s ease;
+  transition: transform 0.6s ease;
 }
+
+.BoxProfile:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 
 .BoxProfile .image{
   border-radius:100px;
